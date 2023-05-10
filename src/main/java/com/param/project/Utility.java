@@ -91,10 +91,7 @@ public class Utility {
 			select.selectByVisibleText(valueToSelect);
 		}
 	
-	public void drpdown()
-	{
-		
-	}
+	
 	}
 
 		//------------------------------------------------------------------------------------------------------------------------------
