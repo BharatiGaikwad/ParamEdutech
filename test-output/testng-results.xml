@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-07T13:41:22 IST" name="Default suite" finished-at="2023-05-07T13:41:42 IST" duration-ms="19961">
+    <groups>
+      <group name="e2e">
+        <method signature="VerifyCheckboxesAndRadioButtonByDefaultBehavoure.verifyCheckboxesAndRadioButtonBehaviours()[pri:1, instance:testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure@71238fc2]" name="verifyCheckboxesAndRadioButtonBehaviours" class="testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure"/>
+      </group> <!-- e2e -->
+    </groups>
+    <test started-at="2023-05-07T13:41:22 IST" name="Default test" finished-at="2023-05-07T13:41:42 IST" duration-ms="19961">
+      <class name="testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure@71238fc2]" started-at="2023-05-07T13:41:22 IST" name="setup" finished-at="2023-05-07T13:41:41 IST" duration-ms="19422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyCheckboxesAndRadioButtonBehaviours()[pri:1, instance:testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure@71238fc2]" started-at="2023-05-07T13:41:41 IST" name="verifyCheckboxesAndRadioButtonBehaviours" finished-at="2023-05-07T13:41:41 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckboxesAndRadioButtonBehaviours -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure@71238fc2]" started-at="2023-05-07T13:41:41 IST" name="tearDown" finished-at="2023-05-07T13:41:42 IST" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCheckboxesAndRadioButtonBehaviours status=SUCCESS method=VerifyCheckboxesAndRadioButtonByDefaultBehavoure.verifyCheckboxesAndRadioButtonBehaviours()[pri:1, instance:testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure@71238fc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcase.VerifyCheckboxesAndRadioButtonByDefaultBehavoure -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<!-- Group create karna heto-->
+	<groups><!--sanity smoke e2e   group create karto,SanitySmokeGroupTestCase class program ahe -->
+		<run>
+			<include name="sanity"></include><!-- include ne excute hotat  -->
+			 <include name="e2e"></include> 
+			<!--  <exclude name="e2e"></exclude> exclude ne skip hotat -->
+		</run>
+	</groups>
+	
+	<!-- listner chay program cha path hit takne-->
+	<listeners><!--ListenrImplementaion program run karnaycha  listener path-->
+		<listener class-name ="com.param.project.Listner"></listener>
+	</listeners>
+	<!--  listener cha ouput bayacha asel tr project refresh karun test output folder mhade emailable report.html check karne-->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testcase.VerifyApplicationPageTitel"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
