@@ -11,6 +11,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -91,8 +92,39 @@ public class Utility {
 			select.selectByVisibleText(valueToSelect);
 		}
 	
-	
-	}
-
+	//_---------------------------select Date From DatePicker---Example datePickerExampleTestCase.java file call kel----------------------------------------------------------------------------------------------
+		
+		public static void selectDateFromDatePicker(WebDriver driver,String month, String year,String dateToSelect) 
+		{
+			
+			driver.findElement(By.xpath("//input[@id='dateOfBirthInput']")).click();
+			
+			WebElement monthDropDown=driver.findElement(By.xpath("//select[@class='react-datepicker__month-select']"));
+			
+			Utility.selectValueFromDropdown(monthDropDown, month);//Utility.selectVlueFromDropDown() this is method 
+					                             //from above "5" is a value of june on wesite
+			WebElement yearDropDown=driver.findElement(By.xpath("//select[@class='react-datepicker__year-select']"));
+			Utility.selectValueFromDropdown(yearDropDown, year);
+					
+					//ab date select karna hai toh list use karna hoga 
+					//(mutiple dates) yeh return karta hai
+			
+			List<WebElement> dates=driver.findElements(By.xpath("//div[@class='react-datepicker__month']//div[@role='option']"));
+					
+			//specific dates select karna ho toh(to iterate karenge)
+				      for(WebElement date:dates)
+				      {
+				    	if(date.getText().contains(dateToSelect))//date yeh(dateToSelect yane ham jo date dalenge)
+				    		                                     //woh contains karta ho to date pain click karo
+				    	{
+				    		date.click();
+				    		break;
+				    	}
+				      }
+		}
 		//------------------------------------------------------------------------------------------------------------------------------
 
+
+		
+}
+		

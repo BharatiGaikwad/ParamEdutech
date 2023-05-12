@@ -35,7 +35,8 @@ public class VerifyNewToursRegistration {
      //-----------------------testcase click On Registration Link------------------------------------------------
 	  //dataProvider hit call kela click kelavr dataProvider method javal jahile to data catch karel
 	   @Test(dataProvider = "registration")
-		public void VerifyRegistartion(String firstName, String lastName, String phone, String email) {
+		public void VerifyRegistartion(String firstName, String lastName, String phone, String email) 
+	   {
 			newToursHomePage.clickOnRegistrationLink();
 			registrationPage.getFirstNameTextField().sendKeys(firstName);
 			registrationPage.getLastNameTextField().sendKeys(lastName);
